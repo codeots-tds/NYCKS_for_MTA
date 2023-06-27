@@ -1,0 +1,392 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,html{
+  font-size: 62.5%;
+}
+#root{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  height: 100vh;
+}
+
+h1{
+  font-size:2rem;
+}
+h4{
+  font-size: 1.5rem;
+}
+a{
+  font-size:1.6rem;
+}
+
+main {
+  height: 100%;
+  background: url('/Banner1.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+a{
+color: #333;
+text-decoration: none;
+}
+
+/* -----------------------------navbar */
+.header{
+  background: #D1DAE1;
+  display: flex;
+  align-items: center;
+  
+}
+
+.header ul {
+  display: flex;
+  flex:1;
+}
+
+.header ul a{
+  color: #47444E;
+  padding: 2rem;
+  border: 0.2rem solid #A8C5DD;
+} 
+
+.header ul a:hover{
+background-color: #14397f;
+color: orangered;
+}
+
+.menu {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  z-index: 50;
+  top: -2.5rem;
+  width: 100%;
+}
+
+.menu a{
+margin-right: 20%;
+}
+
+.menu ul {
+  width: 100%;
+  padding: 1rem;
+  background-color: #DEE1E4;
+}
+/*Media */
+@media only screen and (max-width: 600px) {
+  .header{
+    text-align: center;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .header ul {
+    justify-content: space-between;
+  }
+  .header ul a{
+    flex:1;
+
+    font-size: 1rem;
+    padding: 1rem;
+  }
+ }
+
+/* -----------------------------Footer */
+
+.footbar{
+bottom: 0;
+position: relative;
+width: 100%;
+background: #D1DAE1;
+border-color: gray;
+padding: 20px;
+}
+
+.footerLinks{
+flex-direction: column;
+text-align: left;
+color: orangered;
+display: block;
+padding: 10px;
+box-sizing: border-box;
+
+}
+
+/* ---------------------Register */
+.Register{
+
+text-align: center;
+
+}
+
+
+.registerForm{
+
+display: block;
+align-content: center;
+
+
+}
+
+/* ----------------------------MtwTwitter */
+.MtaTwitter{
+display: block;
+align-items: left;
+width: 100%;
+height: 50%;
+box-sizing: border-box;
+border-color: orangered;
+background-color: orchid;
+}
+
+.App{
+  display: grid;
+  flex-direction: column;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+}
+
+/* trainComp-------------------------------- */
+.trainComp{
+background-color: white;
+/* display: flex;
+flex-direction: row; */
+width: fit-content;
+color: #14397f;
+display: grid;
+}
+
+/* 
+train menu styling */
+.trainMenu{
+  
+  font-size: 15px;
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+ 
+  
+}
+
+.traintMenu.select{
+  width: 100%;
+  background:url('/home/richarda/Bootcamp/project_MTA/frontend_app/public/arrow.png') no-repeat;
+  background-position:80% center;
+
+}
+
+.trainMenu .select select{
+  line-height: 1;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-size: 1em;
+
+}
+
+
+
+/* Station---------------------------------------------- */
+
+.stationMenu{
+ 
+  font-size: 15px;
+  padding: 10px 8px 10px 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  display: grid;
+
+}
+
+.stationMenu.select{
+  width: 100%;
+  background:url('/home/richarda/Bootcamp/project_MTA/frontend_app/public/arrow.png') no-repeat;
+  background-position:80% center;
+
+}
+
+.stationMenu .select select{
+  line-height: 1;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-size: 1em;
+}
+
+.trainTimes {
+  display: grid;
+  grid-template-columns: .5fr .5fr;
+  font-size: 15px;
+  padding: 0px, 30px, 0px, 30px;
+  grid-column: span 2;
+
+}
+
+/* //----------Homepage.js--------------------- */
+
+.userHomepage {
+
+background: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 10rem;
+justify-content: space-around;
+}
+
+h1 {
+ padding: 10px;
+ color: orangered;
+
+} */
+
+.weather {
+
+  display: flex;
+  
+  background: white;
+  border: 10px, blue;
+  
+}
+
+table{
+
+width: 400px;
+text-align: center;
+
+}
+
+th{
+padding-bottom: 5px;
+}
+
+table, th, td{
+  border: 1px, solid #000;
+}
+
+.notes {
+
+
+}
+
+.feed {
+grid-column: 1;
+grid-row: 3;
+}
+/* -----------------------------------------trainmenu */
+
+
+
+/* -----------------------------------------------comment-feed styling */
+
+.Feed{
+display: block;
+padding: 20px;
+list-style: none;
+background: white;
+width: 50%;
+height: 100%;
+align-items: center;
+font-size: 20px;
+border: 1px solid #DDDD;
+border-radius: 4px, 0px, 4px, 0px;
+left: -1px;
+overflow-y: scroll;
+overflow-x: hidden;
+
+}
+
+.Feed-item{
+position: relative;
+padding-bottom: 20px;
+padding-left: 30px;
+border-left: 2px solid #e4e8eb;
+}
+
+.trainSelection{
+font-size: 15px;
+padding: 10px 8px 10px 14px;
+background: #fff;
+border: 1px solid #ccc;
+overflow: hidden;
+position: relative;
+align-items: center;
+
+}
+
+.loginButton{
+background-color: #A8C5DD;
+border: none;
+color: orangered;;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+.registerButton{
+background-color: #A8C5DD;
+border: none;
+color: orangered;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+
+
+}
+
+/* -----------------------------------------------form styling */
+
+.inputField{
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+
+}
+
+.postComment{
+  background-color: #A8C5DD;
+  border: none;
+  color: orangered;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+
+}
